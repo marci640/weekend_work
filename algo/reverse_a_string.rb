@@ -3,7 +3,10 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-
+  array = string.split('')
+  reversed_array = []
+  reversed_array << array.pop until array.empty?
+  reversed_array.join
 end
 
 # Driver code - don't touch anything below this line.
@@ -21,3 +24,5 @@ if result == "edcba"
 else
   puts "F"
 end
+
+
